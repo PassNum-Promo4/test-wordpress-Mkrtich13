@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'wpview-icomoon';
+    src:    url('../fonts/icomoon.eot?q1yv4b');
+    src:    url('../fonts/icomoon.eot?q1yv4b#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?q1yv4b') format('truetype'),
+        url('../fonts/icomoon.woff?q1yv4b') format('woff'),
+        url('../fonts/icomoon.svg?q1yv4b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="wpview-icon-"], [class*=" wpview-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'wpview-icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wpview-icon-triangle-right:before {
+    content: "\e90e";
+}
+
+
+
+
+#wpview_admin_page, #wpview_admin_page_colors_and_styles {
+    padding: 10px 0px;
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+}
+#wpview_colors_and_styles {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column !important;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    background:#FFFFFF;
+    padding:20px;
+}
+
+.wrap > h1 {
+    padding: 10px 0px 0px 10px;
+}
+
+#wpview_admin_page .wpview_settings {
+    padding-left: 10px;
+}
+
+#wpview_admin_page .wpview_choose_views {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+} 
+#wpview_admin_page .wpview_choose_views h3 {
+    text-align:center;
+}
+
+#wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 10px 10px;
+    margin:10px auto; 
+    width:98%;
+    background:#ffffff;
+}
+#wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap label{
+    text-align: center;
+    margin: 0 3%;
+}
+#wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap label span{
+    display:block; font-size:16px; font-weight:bold; padding:15px 0px;
+}
+#wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap label img{
+    max-width:100%; 
+}
+#wpview_admin_page .wpview_choose_views input[type=radio]{
+    display: none;
+    text-align: center;
+} 
+#wpview_admin_page .wpview_choose_views input[type=radio]+img{
+    box-shadow: 0px 3px 15px 0px #666;
+    transition: all .2s linear;
+    padding: 2px;
+    border: 1px solid rgba(170, 170, 170, 0);
+    opacity: .5;
+} 
+#wpview_admin_page .wpview_choose_views input[type=radio]:checked+img{
+    box-shadow: none;
+    transform: translateY(3px);
+    border-color: #4baf4f;
+    opacity: 1;
+}
+#wpview_admin_page .wpview_choose_views input[type=radio]:checked~span {
+    color: #4baf4f;
+}
+
+#wpview_admin_page .wpview_buttons, #wpview_admin_page_colors_and_styles .wpview_buttons {
+    padding: 0 10px 1px;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 26px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+}
+
+#wpview_save_views, #wpview_save_colors {
+    background: #0085ba none repeat scroll 0 0;
+    border-color: #0073aa #006799 #006799;
+    box-shadow: 0 1px 0 #006799;
+    color: #fff;
+    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+    margin: 0;
+}
+
+#wpview_reset_views, #wpview_reset_colors, #wpview_set_none_views {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border-color: #ccc;
+    box-shadow: 0 1px 0 #ccc;
+    color: #555;
+    vertical-align: top;
+}
+
+#wpview_set_none_views {
+    margin: 0 15px 0 7px;
+}
+
+#wpview_reset_views, #wpview_reset_colors {
+    margin-right: 15px;
+}
+
+#wpview_save_views:hover, #wpview_save_colors:hover {
+    background: #008ec2 none repeat scroll 0 0;
+    border-color: #006799;
+    color: #fff;
+}
+
+#wpview_save_views:active, #wpview_save_colors:active {
+    background: #0073aa none repeat scroll 0 0;
+    border-color: #006799;
+    box-shadow: 0 2px 0 #006799 inset;
+    vertical-align: top;
+}
+
+#wpview_reset_views:hover, #wpview_reset_colors:hover, #wpview_set_none_views:hover {
+    background: #fafafa none repeat scroll 0 0;
+    border-color: #999;
+    color: #23282d;
+}
+
+#wpview_reset_views:active, #wpview_reset_colors:active, #wpview_set_none_views:active {
+    background: #eee none repeat scroll 0 0;
+    border-color: #999;
+    box-shadow: 0 2px 5px -3px rgba(0, 0, 0, 0.5) inset;
+    transform: translateY(1px);
+}
+
+#wpview_admin_page fieldset {
+    border: 1px solid #ccc;
+    width: 31%;
+    margin: 15px 1%;
+    padding: 5px 5px 10px;
+    text-align: center;
+    transition: all .2s linear;    
+    box-sizing:border-box;
+}
+
+#wpview_admin_page #wpview_plugins {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#wpview_admin_page #wpview_plugins > * {
+    flex-grow: 300px;
+}
+
+#wpview_admin_page #wpview_plugins fieldset {
+    padding:10px 20px 30px 20px;
+    text-align:left; width:100%;
+}
+
+#wpview_admin_page #wpview_plugins fieldset div:first-of-type {
+    padding:10px 0px 20px 0px;
+    font-size:13px;
+}
+
+#wpview_admin_page legend {
+    font-size:16px;
+    text-align: left;
+}
+
+#wpview_admin_page #wpview_plugin_names {
+    display:block;
+}
+
+#wpview_admin_page .views_for_all, #wpview_admin_page_colors_and_styles #wpview_colors_and_styles {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#wpview_colors_and_styles h3:first-of-type {
+    border-top: none;
+}
+#wpview_colors_and_styles h3 {
+    border-top:1px solid #ddd;
+    padding:10px 0px 10px 0px;
+    margin:0px 0px 10px 0px;
+    position: relative;
+    cursor: pointer;
+}
+#wpview_colors_and_styles h3:after{
+    content: "\e90e";
+    font-family: wpview-icomoon;
+    display: inline-block;
+    position: absolute;
+    right: 7px;
+    font-size: 1.3em;
+    top: calc(50% - 8px);
+    transition: all .3s linear;
+}
+.wpview_all_together_in_table{
+    border: none!important;
+}
+#wpview_colors_and_styles h3.wpview_colors_group_close:after{
+    transform: rotate(90deg);
+}
+#wpview_colors_and_styles h3 span {
+    padding-top: 7px;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#wpview_admin_page #wpview_plugin_names label {
+    margin: 5px;
+}
+
+#wpview_admin_page #wpview_plugin_names input {
+    display: none;
+}
+
+#wpview_admin_page #wpview_plugin_names label img {
+    border-radius: 15px;
+    transition: all 0.2s linear 0s;
+    vertical-align: middle;
+    width: 60px;
+}
+
+#wpview_admin_page .wpview_checkbox {
+    box-shadow: 0 3px 4px 0 rgba(60, 60, 60, 0.6);
+    transform: translateY(1px);
+    opacity: 1;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#wpview_admin_page .wpview_checkbox:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+}
+#wpview_admin_page .wpview_not_installed_checkbox {
+    opacity: .15!important;
+    cursor: default!important;
+}
+#wpview_admin_page .fieldset_label_view,
+#wpview_admin_page .fieldset_label_position{
+    margin: 5px;
+}
+
+#wpview_admin_page select {
+    width: 100%;
+}
+
+#wpview_admin_page .plugin_logo {
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 5px;
+}
+
+#wpview_admin_page .wpview_labels_wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#wpview_admin_page .wpview_labels_wrap > label{
+    flex: 1 1 45%;
+}
+
+.wpview_admin_button_group {
+    padding:20px 18px;
+    text-align:right;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.wpview_selected_parent{
+    border: 1px solid #0073AA !important;
+    box-shadow: 0 5px 15px -4px #0073AA;
+}
+
+#wpview_admin_page_colors_and_styles .wpview_colors_group {
+    margin-bottom: 10px;
+}
+
+.wpview_colors_title {
+    padding:10px 0px 0px 10px;
+}
+
+.wpview_color_option {
+    display: flex;
+    align-items: center;
+    padding:1px 10px;
+}
+.wpview_color_option label span{ font-weight:bold; }
+.wpview_color_option:hover{
+    background: #ebebeb;
+}
+.wpview_color_option > label {
+    width: 60%;
+}
+.wpview_color_option > input {
+    height: 28px;
+}
+.wpview_checkbox_group {
+    padding-top: 5px;
+    padding-left: 5px;
+    flex: 1 1 120px;
+    align-self: flex-end;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: left;
+}
+.wpview_radio_box{
+    padding: 0 5px;
+    /*flex-grow: 1;*/
+    white-space: nowrap;
+}
+.wpview_checkbox_group label {
+    white-space: nowrap;
+}
+.wpview_hidden {
+    display: none;
+}
+.wpview_radio_box label{
+    display: block;
+}
+.wpview_field_types {
+    margin: 3px;
+    padding: 4px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 0 #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.wpview_field_types:hover,
+.wpview_field_types:focus{
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.wpview_field_parent {
+    border: 1px solid #ccc !important;
+    padding: 10px;
+    margin-top: 15px;
+}
+.wpview_field_parent > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wpview_shortcode_fields_group {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.wpview_shortcode_fields_group select {
+    width: 150px;
+    flex-shrink: 0;
+}
+.wpview_field_parent:last-of-type {
+    margin-bottom: 40px;
+}
+.put-shortcode-parent {
+    position: absolute;
+    bottom: 0px;
+    right: 17px;
+    left: 0px;
+    margin-top: 15px;
+    background: #fff;
+    padding: 5px;
+    padding-right: 13px;
+    text-align: right;
+}
+
+/* TOOLTIP */
+#wpview_admin_page div.wpv-field-desc {position: relative;display: inline; white-space:normal;}
+#wpview_admin_page div.wpv-field-desc span { white-space:normal; position: absolute; width:150px;color: #FFFFFF; background: #333;height:auto;line-height: 17px;padding:8px 10px;font-size:12px;text-align: center; display:none;border-radius: 6px;}
+#wpview_admin_page div.wpv-field-desc span:after { content: '';position: absolute;top: 100%;left: 50%; margin-left: -8px;width: 0; height: 0; border-top: 8px solid #333;border-right: 8px solid transparent; border-left: 8px solid transparent;}
+#wpview_admin_page div:hover.wpv-field-desc span { display:block;opacity: 1;bottom: 30px;left: 50%;margin-left: -95px;z-index: 999999; white-space:normal;}
+@media screen and (max-width:1100px) {
+    #wpview_admin_page fieldset{
+        width: 48%;
+
+    }
+    #wpview_admin_page .wpview_labels_wrap{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:64em) {
+    .wpview_color_option{
+        flex-flow: row wrap;
+    }
+    .wpview_color_option > *{
+        flex: 1 1 300px;
+    }
+    .wpview_color_option > label{
+        flex: 2 1 300px;
+    }
+    #wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap{
+        flex-wrap: wrap;
+    }
+    #wpview_admin_page .wpview_choose_views .wpview_choose_views_label_wrap label{
+        flex-grow: 1;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 782px) {
+    #wpview_admin_page fieldset{
+        width: auto;
+        flex-grow: 1;
+    }
+    .wpview_checkbox_group label{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:40em) {
+    #wpview_admin_page fieldset {
+        margin: 15px 0;
+    }
+    #wpview_admin_page .wpview_labels_wrap > label,
+    .wpview_checkbox_group{
+        flex: 1 1 270px;
+        line-height: 1.6;
+        margin-bottom: 9px;
+        font-size: 16px;
+    }
+    .wpview_admin_button_group{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .wpview_admin_button_group > button{
+        flex: 1 1 300px;
+        margin: 10px 0!important;
+        height: 40px!important;
+    }
+    .wpview_color_option{
+        margin-bottom: 15px;
+    }
+    .wpview_color_option > input {
+        width: 100%;
+    }
+    #wpview_admin_page #wpview_plugin_names label img{
+        width: 40px;
+        border-radius: 8px;
+    }
+}
